@@ -1,0 +1,18 @@
+T=int(input())
+vowels=['a','e','i','o','u']
+for i in range(T):
+    N=int(input())
+    S=input().lower()
+    concount=0
+    hardpro=False
+    for c in S:
+        if c in vowels:
+            concount=0
+        else:
+            concount+=1
+        if concount>=4:
+            print("NO")
+            hardpro=True
+            break
+    if not hardpro:
+            print("Yes")
