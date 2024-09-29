@@ -1,0 +1,22 @@
+T=int(input())
+for i in range(T):
+    D_DSA,D_TOC,D_DM=map(int,input().split())
+    S_DSA,S_TOC,S_DM=map(int,input().split())
+    Dtscore=D_DSA+D_TOC+D_DM
+    Stscore=S_DSA+S_TOC+S_DM
+    if Dtscore>Stscore:
+        print("DRAGON")
+    elif Stscore>Dtscore:
+        print("SLOTH")
+    else:
+        if D_DSA>S_DSA:
+            print("DRAGON")
+        elif S_DSA>D_DSA:
+            print("SLOTH")
+        else:
+            if D_TOC>S_TOC:
+                print("DRAGON")
+            elif S_TOC>D_TOC:
+                print("SLOTH")
+            else:
+                print("TIE")
