@@ -1,0 +1,28 @@
+def find_combinations(N,csum=0,s=1,combi=[],r=[]):
+    if csum==N:
+        r.append(combi[:])
+        return
+    if csum > N:
+        return
+    for i in range(s,N+ 1):
+        combi.append(i)
+        find_combinations(N,csum+i,i,combi,r)
+        combi.pop()
+t=int(input())
+for i in range(t):
+    N,X=map(int,input().split())
+    r=[]
+    find_combinations(N,r=r)
+    rcombi=[]
+    for a in r:
+        if all(j%2==0 for j in a) or all(j%2!=0 for j in a):
+            rcombi.append(a)
+    found=False
+    for combi in rcombi:
+        if X in combi:
+            found=True
+            break
+    if found:
+        print("Yes")
+    else:
+        print("No")
