@@ -1,0 +1,13 @@
+def max_score(T, test_cases):
+    results = []
+    for X, Y in test_cases:
+        score_A_then_B = (500 - 2 * X) + (1000 - 4 * (X + Y))
+        score_B_then_A = (1000 - 4 * Y) + (500 - 2 * (X + Y))
+        results.append(max(score_A_then_B, score_B_then_A))
+    
+    return results
+T = int(input())  # Number of test cases
+test_cases = [tuple(map(int, input().split())) for _ in range(T)]
+results = max_score(T, test_cases)
+for result in results:
+    print(result)
