@@ -1,0 +1,15 @@
+T=int(input())
+l=[]
+for i in range(T):
+    P,Q,R,S=map(int,input().split())
+    l=[P,Q,R,S]
+    m=False
+    s=sum(l)
+    for i in range(len(l)):
+        if l[i]>s-l[i]:
+            m=True
+            break
+    if m:
+        print("Yes")
+    else:
+        print("No")
