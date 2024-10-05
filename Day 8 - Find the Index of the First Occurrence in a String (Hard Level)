@@ -1,0 +1,10 @@
+def indoffocc(haystack,needle):
+    if needle in haystack:
+        print("The first occurence of '",needle,"'is at index",haystack.find(needle))
+    else:
+        print("Sorry '",needle,"'is not present:-1")
+t=int(input("Please input the number of test cases:"))
+for i in range(t):
+    haystack=input("Please input a parent string:")
+    needle=input("Please input a word to search:")
+    indoffocc(haystack,needle)
