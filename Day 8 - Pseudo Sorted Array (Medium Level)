@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+bool isPseudoSorted(vector<int>& A) {
+    int n=A.size();
+    int countViolations=0;
+    for (int i=0; i<n-1; i++) {
+        if (A[i]>A[i+1]) {
+            countViolations++;
+            if (countViolations>1) return false;
+            swap(A[i], A[i+1]);
+            for (int j=0; j < n-1; j++) {
+                if (A[j] > A[j+1]) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+    return true;
+}
+int main() {
+    int T;
+    cin>>T;
+    while (T--) {
+        int N;
+        cin>>N;
+        vector<int> A(N);
+        for (int i=0; i<N; i++) {
+            cin>>A[i];
+        }
+        if (isPseudoSorted(A)){
+            cout<<"YES"<<endl;
+        } else{
+            cout<<"NO"<<endl;
+        }
+    }
+    return 0;
+}
