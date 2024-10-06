@@ -1,0 +1,9 @@
+T=int(input())
+for i in range(T):
+    X,Y=map(int,input().split())
+    m=0
+    if X>=Y:
+        print(m)
+    else:
+        m=(Y-1)//X
+        print(m)
