@@ -1,0 +1,6 @@
+import math
+T=int(input())
+for i in range(T):
+    N,K,M=map(int,input().split())
+    tc=K*M
+    print(math.ceil((N/(K*M))))
