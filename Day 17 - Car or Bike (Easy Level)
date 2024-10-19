@@ -1,0 +1,9 @@
+T=int(input())
+for i in range(T):
+    X,Y=map(int,input().split())
+    if X>Y:
+        print("Car")
+    elif Y>X:
+        print("Bike")
+    else:
+        print("Same")
