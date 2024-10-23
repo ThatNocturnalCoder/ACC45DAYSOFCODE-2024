@@ -1,0 +1,9 @@
+T=int(input())
+for i in range(T):
+    H,X,Y=map(int,input().split())
+    H-=Y
+    c=1
+    while H>0:
+        H-=X
+        c+=1
+    print(c)
