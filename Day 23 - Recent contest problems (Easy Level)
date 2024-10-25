@@ -1,0 +1,12 @@
+T=int(input())
+for i in range(T):
+    N=int(input())
+    contests=input().split()
+    cSTART38=0
+    cLTIME108=0
+    for c in contests:
+        if c=="START38":
+            cSTART38+=1
+        elif c=="LTIME108":
+            cLTIME108+=1
+    print(cSTART38, cLTIME108)
