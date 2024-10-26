@@ -1,0 +1,8 @@
+T=int(input())
+for i in range(T):
+    N=int(input())
+    if N<2:
+        c=0
+    else:
+        c=(N-2)//7+1
+    print(c)
