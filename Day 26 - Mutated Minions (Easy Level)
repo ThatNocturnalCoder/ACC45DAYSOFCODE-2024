@@ -1,0 +1,10 @@
+T=int(input())
+for i in range(T):
+    N,K=map(int,input().split())
+    ic=input().split()
+    numaftertransmorg=0
+    for f in range(len(ic)):
+        ic[f]=int(ic[f])+K
+        if ic[f]%7==0:
+            numaftertransmorg+=1
+    print(numaftertransmorg)
