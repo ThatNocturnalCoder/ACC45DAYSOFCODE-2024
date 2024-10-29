@@ -1,0 +1,14 @@
+T=int(input())
+for i in range(T):
+    N=int(input())
+    if N>1:
+        prime=True
+        for j in range(2,int(N**0.5)+1):
+            if N%j==0:
+                print("no")
+                prime=False
+                break
+        if prime:
+            print("yes")
+    else:
+        print("no")
