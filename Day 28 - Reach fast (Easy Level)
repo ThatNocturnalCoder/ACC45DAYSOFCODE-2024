@@ -1,0 +1,12 @@
+T=int(input())
+results=[]
+for i in range(T):
+    A,B,K=map(int,input().split())
+    distance=abs(A-B)
+    if distance%K==0:
+        steps=distance//K
+    else:
+        steps=(distance//K)+1
+    results.append(steps)
+for result in results:
+    print(result)
