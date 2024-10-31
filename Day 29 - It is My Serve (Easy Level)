@@ -1,0 +1,12 @@
+T=int(input())
+result=[]
+for i in range(T):
+    P,Q=map(int,input().split())
+    tpoints=P+Q
+    chanofserve=(tpoints//2)%2
+    if chanofserve==0:
+        result.append("Alice")
+    else:
+        result.append("Bob")
+for r in result:
+    print(r)
