@@ -1,0 +1,5 @@
+T=int(input())
+for i in range(T):
+    N=int(input())
+    poss_cho=N*(N-1)
+    print(poss_cho)
