@@ -1,0 +1,13 @@
+T=int(input())
+for i in range(T):
+    N=int(input())
+    A=list(map(int,input().split()))
+    c1=A.count(1)
+    cneg1=A.count(-1)
+    S=c1-cneg1
+    if S==0:
+        print(0)
+    elif S%2!=0:
+        print(-1)
+    else:
+        print(abs(S)//2)
