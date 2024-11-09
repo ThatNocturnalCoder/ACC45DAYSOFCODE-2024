@@ -1,0 +1,6 @@
+import math
+T=int(input())
+for i in range(T):
+    N,A,B=map(int,input().split())
+    r=int(math.log2(N))
+    print(r*A+(r-1)*B)
