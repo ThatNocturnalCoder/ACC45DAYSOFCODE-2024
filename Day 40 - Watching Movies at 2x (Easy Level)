@@ -1,0 +1,4 @@
+X,Y=map(int,input().split())
+rem_min=X-Y
+total_t=(Y//2)+rem_min
+print(total_t)
