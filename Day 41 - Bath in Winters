@@ -1,0 +1,9 @@
+T=int(input())
+r=[]
+for i in range(T):
+    X,Y=map(int,input().split())
+    bg=X//Y
+    p=bg//2
+    r.append(p)
+for j in r:
+    print(j)
