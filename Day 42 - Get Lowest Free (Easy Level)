@@ -1,0 +1,6 @@
+T=int(input())
+for i in range(T):
+    A,B,C=map(int,input().split())
+    tp=A+B+C
+    p=tp-min(A,B,C)
+    print(p)
