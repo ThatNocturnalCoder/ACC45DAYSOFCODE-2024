@@ -1,0 +1,11 @@
+T=int(input())
+r=[]
+for i in range(T):
+    N,X,P=map(int,input().split())
+    score=3*X-(N-X)
+    if score>=P:
+        r.append("PASS")
+    else:
+        r.append("FAIL")
+for j in r:
+    print(j)
