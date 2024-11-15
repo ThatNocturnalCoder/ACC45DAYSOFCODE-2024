@@ -1,0 +1,7 @@
+T=int(input())
+for i in range(T):
+    N,A,B=map(int,input().split())
+    oc=(N + 1)//2
+    ec=N//2
+    tduration=(oc*B)+(ec*A)
+    print(tduration)
