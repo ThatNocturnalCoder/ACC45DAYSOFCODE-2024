@@ -1,0 +1,7 @@
+T=int(input())
+for i in range(T):
+    N=int(input())
+    g=N//5
+    rem=N%5
+    c=(g*4)+rem
+    print(c)
