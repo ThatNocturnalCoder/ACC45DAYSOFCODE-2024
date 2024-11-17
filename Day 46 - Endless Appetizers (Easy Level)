@@ -1,0 +1,7 @@
+T=int(input())
+for i in range(T):
+    X,Y,R=map(int,input().split())
+    esti=R//30
+    tsticks=X+esti
+    maxp=(tsticks+Y-1)//Y
+    print(maxp)
