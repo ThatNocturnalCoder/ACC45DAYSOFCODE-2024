@@ -1,0 +1,9 @@
+T=int(input())
+results=[]
+for i in range(T):
+    N,X=map(int, input().split())
+    if X%N==0:
+        results.append("YES")
+    else:
+        results.append("NO")
+print("\n".join(results))
