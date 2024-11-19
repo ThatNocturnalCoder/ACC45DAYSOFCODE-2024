@@ -1,0 +1,10 @@
+T=int(input())
+for i in range(T):
+    S,X,Y,Z=map(int,input().split())
+    sfree=S-(X+Y)
+    if sfree>=Z:
+        print(0)
+    elif S-Y>=Z or S-X>=Z:
+        print(1)
+    else:
+        print(2) 
